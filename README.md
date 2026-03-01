@@ -11,14 +11,14 @@ A Retrieval-Augmented Generation (RAG) application that lets you ask questions a
 
 ## Tech Stack
 
-| Component        | Technology                        |
-| ---------------- | --------------------------------- |
-| UI               | Streamlit                         |
-| LLM              | Llama 3.1 8B (via Groq API)      |
-| Embeddings       | HuggingFace `all-MiniLM-L6-v2`   |
-| Vector Store     | FAISS                             |
-| Framework        | LangChain                         |
-| PDF Parsing      | PyPDF                             |
+| Component    | Technology                     |
+| ------------ | ------------------------------ |
+| UI           | Streamlit                      |
+| LLM          | Llama 3.1 8B (via Groq API)    |
+| Embeddings   | HuggingFace `all-MiniLM-L6-v2` |
+| Vector Store | FAISS                          |
+| Framework    | LangChain                      |
+| PDF Parsing  | PyPDF                          |
 
 ## Project Structure
 
@@ -41,12 +41,14 @@ RAG-Document-Q&A/
 ## Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd RAG-Document-Q&A
    ```
 
 2. **Create and activate a virtual environment**
+
    ```bash
    python -m venv .venv
    # Windows
@@ -56,11 +58,13 @@ RAG-Document-Q&A/
    ```
 
 3. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Create a `.env` file** in the project root with your API key:
+
    ```
    GROQ_API_KEY=your_groq_api_key_here
    ```
@@ -70,6 +74,7 @@ RAG-Document-Q&A/
 ## Usage
 
 1. **Start the application**
+
    ```bash
    streamlit run main.py
    ```
@@ -82,10 +87,14 @@ RAG-Document-Q&A/
 
 ## Configuration
 
-| Parameter       | Location   | Default                  | Description                                  |
-| --------------- | ---------- | ------------------------ | -------------------------------------------- |
-| `model_name`    | `main.py`  | `llama-3.1-8b-instant`   | Groq LLM model                               |
-| `model_name`    | `main.py`  | `all-MiniLM-L6-v2`       | HuggingFace embedding model                  |
-| `chunk_size`    | `main.py`  | `1000`                   | Character count per document chunk            |
-| `chunk_overlap` | `main.py`  | `200`                    | Overlapping characters between chunks         |
-| `docs[:50]`     | `main.py`  | First 50 pages           | Number of document pages to process           |
+| Parameter       | Location  | Default                | Description                           |
+| --------------- | --------- | ---------------------- | ------------------------------------- |
+| `model_name`    | `main.py` | `llama-3.1-8b-instant` | Groq LLM model                        |
+| `model_name`    | `main.py` | `all-MiniLM-L6-v2`     | HuggingFace embedding model           |
+| `chunk_size`    | `main.py` | `1000`                 | Character count per document chunk    |
+| `chunk_overlap` | `main.py` | `200`                  | Overlapping characters between chunks |
+| `docs[:50]`     | `main.py` | First 50 pages         | Number of document pages to process   |
+
+## App
+
+![App Screenshot](app-screenshot.png)
