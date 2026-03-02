@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) application that lets you ask questions about your PDF research papers and get accurate, context-based answers powered by Groq's Llama 3.1 model.
 
+![App Screenshot](app-screenshot.png)
+
 ## How It Works
 
 1. **Document Ingestion** - PDF files from the `research_papers/` directory are loaded and split into manageable text chunks.
@@ -94,7 +96,3 @@ RAG-Document-Q&A/
 | `chunk_size`    | `main.py` | `1000`                 | Character count per document chunk    |
 | `chunk_overlap` | `main.py` | `200`                  | Overlapping characters between chunks |
 | `docs[:50]`     | `main.py` | First 50 pages         | Number of document pages to process   |
-
-## App
-
-![App Screenshot](app-screenshot.png)
