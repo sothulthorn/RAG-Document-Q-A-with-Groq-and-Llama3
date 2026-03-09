@@ -45,7 +45,7 @@ RAG-Document-Q&A/
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sothulthorn/RAG-Document-Q-A-with-Groq-and-Llama3.git
    cd RAG-Document-Q&A
    ```
 
